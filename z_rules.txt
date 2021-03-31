@@ -1,0 +1,33 @@
+Assets List:
+1. dotted.svg
+2. doubleInvertedComma.png
+3. favicon.ico
+4. loading.gif
+5. star.png
+6. Footer
+7. bigImgView
+
+
+Rules for using assets
+
+1. Theme of this event is open. You can develop any type of website that you like but use the provided assets. You can use other assets too but using provided assets are mandatory.
+
+2. Use dotted.svg, doubleInvertedComma.png, star.png whenever you want. Don't edit any images.
+
+3. Use favicon.ico in the favicon area.
+
+4. Use loading.gif to show any kind of loading on your site. 
+
+5. Footer is a sample code for any website's footer. Use that code to build your footer. You can change the link content of the footer if you like. But the structure of it must be the same as provided. More details are provided in the footer's index.html file.
+
+6. bigImgView contains 1 HTML and 1 CSS file. In the HTML file, there is one script tag that contains the bigImgView function which helps to view the image in a big frame. Open that file to avoid confusion.
+
+7. In the index.html file for bigImgView folder, there are two images. It is not mandatory to use them in your website. They are there for only preview of function.
+
+8. This rule is for First-year students:
+	
+   FY students can implement either the loading.gif or bigImgView function. If they want to implement both then they can but at least implement one among these two.
+
+
+
+|-|-|-|     Best of luck with the event and Happy developing :-)     |-|-|-|

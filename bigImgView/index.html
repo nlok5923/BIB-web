@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--
+
+  Here, participant has to use the js function bigImgView to make view image bigger.. 
+  
+  Turn on your internet before opening this file in browser.
+  
+  This is a static html file. Open it in your computer and click on the image. You will see that image is big now. 
+
+  This two are sample images. It is not mandatory to use them in the development.
+
+  So apply this to the images in your site. It will be a plus point in judging if participant apply it to every images. 
+
+  In order to apply, just write onclick = 'bigImgView(this.src)' to an image's attribute and js and css will handle everything else.
+
+-->
+
+<img id="myImg" src="https://www.w3schools.com/howto/img_snow.jpg" onclick='bigImgView(this.src)' alt="Snow" style="width:100%;max-width:300px">
+
+
+<img id="myImg" src="https://www.nhm.ac.uk/content/dam/nhmwww/discover/wpy-56/13.jpg.thumb.1160.1160.jpg" onclick='bigImgView(this.src)' alt="Snow" style="width:100%;max-width:300px">
+
+<script>
+
+
+
+// Preview function which takes a image url ( IMG tag's src sttribute ) as parameter.
+
+let bigImgView = (imgSrc) => {
+
+    // Making elements
+    let divP = document.createElement('DIV');
+    let spanC = document.createElement('SPAN');
+    let imgC = document.createElement("IMG");
+
+    // Setting attributes
+    divP.setAttribute('class', 'bib-modal');
+    spanC.setAttribute('class', 'bib-close');
+    imgC.setAttribute('class', 'bib-modal-content');
+    imgC.setAttribute('src', imgSrc);
+
+    // Adding texts
+    spanC.innerHTML = '&times;';
+
+    // Handling events
+    spanC.onclick = function(){
+        this.parentElement.remove();
+    }
+
+    // Appending childs
+    divP.appendChild(spanC);
+    divP.appendChild(imgC);
+
+    // Appending to body
+    document.body.appendChild(divP);
+    divP.style.display = 'block';
+    console.log("Big image");
+
+}
+
+
+</script>
+
+</body>
+</html>
