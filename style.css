@@ -223,7 +223,8 @@
       font-family: "montserrat";
       color: white;
       font-size: 40px;
-      text-align: center;
+      text-align: center;;
+      margin-left: 35%;
     }
 
 .hole {
@@ -504,4 +505,9 @@ body {
 #preload img {
   width: 50px;
   height: 50px;
+}
+
+.star {
+  height: 50px;
+  width: 50px;
 }
