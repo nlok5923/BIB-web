@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'  rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+<body>
+   <div id="preload">
+    <img src="assests/images/loading.gif" alt="loading" />
+  </div> 
+ <div id="page" >
+    <div class="about-page" >
+        <div class="compo">
+            <h1>Hey !!</h1>
+            <img class="proImage" src="assests/images/nitanshu.jpg" alt=""></img>
+            <span style="font-size: 30px;" class="name-span"><img class="comma" src="assests/images/doubleInvertedComma.png">  Nitanshu Lokhande <img class="comma" src="assests/images/doubleInvertedComma.png"> </span>
+            <p>Student at IIIT Vadodara</p>
+            <br />
+            <br />
+            <div class="social__links">
+            <a
+              href="https://www.facebook.com/nitanshu.lokhande.9/"
+              class="fa fa-facebook"
+            >
+              &emsp;
+            </a>
+            <a href="https://www.instagram.com/nit_lok/" class="fa fa-instagram">
+              &emsp;
+            </a>
+            <a href="https://github.com/nlok5923" class="fa fa-github">
+              &emsp;
+            </a>
+            <a
+              href="https://www.linkedin.com/in/nitanshu-lokhande-5b60691a0/"
+              class="fa fa-linkedin"
+            >
+              &emsp;
+            </a>
+            </div>
+            
+          <h1> About this project</h1>
+          <p>
+         A black hole is a place in space where gravity pulls so much that even light can not get out. 
+             The gravity is so strong because matter has been squeezed into a tiny space. 
+                This can happen when a star is dying.
+
+          Because no light can get out, people can't see black holes. They are invisible. 
+           Space telescopes with special tools can help find black holes. The special tools can see how 
+           stars that are very close to black holes act differently than other stars.
+          </p>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
+
+<script type="text/javascript">
+  window.onload = function () {
+    function setPage() {
+      console.log("hell");
+      var page = document.getElementById("page");
+      var load = document.getElementById("preload");
+      page.style.display = "block";
+      load.style.display = "none";
+    }
+
+    setTimeout(()=>{
+      setPage();
+    },1500);
+   
+  }
+</script>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'  rel="stylesheet" />
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-section">
+        <div>
+            <div class="container">
+              <div class="box1">
+              <a href="#about">  <button class="btn extra1"> Black holes</button></a>
+              </div>
+              <div class="box2">
+               <a href="#meet"> <button class="btn">Meet</button></a>
+              </div>
+              <div class="box2">
+                <a href="about.html"> <button class="btn">About</button> </a>
+              </div>
+              <div class="box3">
+             <a href="#desc">   <button class="btn extra2">Info</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="black-hole-info" id="about">
+          <img class="black-hole" src="assests/images/anatomy.png" alt="black hole" />
+          <div class="info">
+              <h1> Here is yor gigantic giant</h1>
+              <div class="typewriter typewriter-text">
+                  <p>A black hole is a place in space where gravity pulls so much that even light can not get out. 
+                      <br> The gravity is so strong because matter has been squeezed into a tiny space. 
+                      <br>This can happen when a star is dying.
+
+                Because no light can get out, people can't see black holes. They are invisible. 
+                <br>Space telescopes with special tools can help find black holes. The special tools can see how 
+                <br>stars that are very close to black holes act differently than other stars.
+            </p>
+            </div>
+          </div>
+          </div>
+        </div>
+
+        <div class="meet-blackhole" id="meet">
+            <h1 class="meet-head">Meet Some</h1>
+            <div class="section">
+            <!-- <img class="hole hole-c" src="assests/images/b1.jpg" alt="b1" /> -->
+            <img id="myImg" class="hole" src="assests/images/b1.jpg" onclick='bigImgView(this.src)' alt="Snow">
+            <div class="info-b">
+                <h1> Name</h1>
+            <p>
+                Because no light can get out, people can't see black holes. They are invisible. 
+                <br>Space telescopes with special tools can help find black holes. The special tools can see how 
+                <br>stars that are very close to black holes act differently than other stars.
+            </p>
+            </div>
+            </div>
+            <div class="section">
+                <div class="info-b">
+                    <h1> Name</h1>
+                <p>
+                    Because no light can get out, people can't see black holes. They are invisible. 
+                    <br>Space telescopes with special tools can help find black holes. The special tools can see how 
+                    <br>stars that are very close to black holes act differently than other stars.
+                </p>
+                </div>
+            <!-- <img class="hole hole-alt"  src="assests/images/b2.jpg" alt="b1" /> -->
+            <img id="myImg" class="hole" src="assests/images/b2.jpg" onclick='bigImgView(this.src)' alt="Snow">
+
+          </div>
+            <div class="section">
+              <img id="myImg" class="hole" src="assests/images/b3.jpg" onclick='bigImgView(this.src)' alt="Snow">
+            <!-- <img class="hole hole-c" src="assests/images/b3.jpg" alt="b1" /> -->
+            <div class="info-b">
+                <h1> Name</h1>
+            <p>
+                Because no light can get out, people can't see black holes. They are invisible. 
+                <br>Space telescopes with special tools can help find black holes. The special tools can see how 
+                <br>stars that are very close to black holes act differently than other stars.
+            </p>
+            </div>
+            </div>
+            <div class="section">
+                <div class="info-b">
+                    <h1> Name</h1>
+                <p>
+                    Because no light can get out, people can't see black holes. They are invisible. 
+                    <br>Space telescopes with special tools can help find black holes. The special tools can see how 
+                    <br>stars that are very close to black holes act differently than other stars.
+                </p>
+                </div>
+            <!-- <img class="hole hole-alt" src="assests/images/b4.jpg" alt="b1" /> -->
+            <img id="myImg" class="hole" src="assests/images/b4.jpg" onclick='bigImgView(this.src)' alt="Snow">
+            </div>
+        </div>
+      
+        <div class="video-blackhole" id="desc">
+          <h1 class="video-head"> Gain some info</h1>
+          <iframe width="650px" height="370px" src="https://www.youtube.com/embed/kOEDG3j1bjs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
+        </div>
+
+        <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Gallery</h3>
+          <ul>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Picks</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Marketplace</h3>
+          <ul>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Best selling</a></li>
+            <li><a href="#">Latest</a></li>
+          </ul>
+        </div>
+       
+        <div class="footer-section form">
+          <h3>Newsletter</h3>
+          <p>Subscribe to our newsletter to get your weekly dose of news,updates,tips and special offers.</p>
+       <input type="email" placeholder="Enter your email address">
+       <button>Subscribe</button>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; Nitanshu Lokhande
+      </div>
+    </footer>
+
+  <!-- <img style="color: white;" src="assests/images/dotted.svg" alt="test" /> -->
+</body>
+</html>
+
+<script type="text/javascript">
+  let bigImgView = (imgSrc) => {
+
+// Making elements
+let divP = document.createElement('DIV');
+let spanC = document.createElement('SPAN');
+let imgC = document.createElement("IMG");
+
+// Setting attributes
+divP.setAttribute('class', 'bib-modal');
+spanC.setAttribute('class', 'bib-close');
+imgC.setAttribute('class', 'bib-modal-content');
+imgC.setAttribute('src', imgSrc);
+
+// Adding texts
+spanC.innerHTML = '&times;';
+
+// Handling events
+spanC.onclick = function(){
+    this.parentElement.remove();
+}
+
+// Appending childs
+divP.appendChild(spanC);
+divP.appendChild(imgC);
+
+// Appending to body
+document.body.appendChild(divP);
+divP.style.display = 'block';
+console.log("Big image");
+
+}
+
+</script>

@@ -1,4 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 * ,body{
     margin: 0;
     padding: 0;
+}
+#page {
+  display: none;
+}
+
+#load {
+  display: block;
+}
+.preloader-section {
+    background-image: url("assests/images/space.gif");
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.preloader-section .loader {
+    height: 100px;
+    width: 100px;
+}
+
+/* //code for typewriter effect  */
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    color: white;
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+  .rocket-font {
+      font-size: 50px;
+      color: white;
+  }
+
+  .rocket-img {
+      height: 200px;
+      width: 200px;
+  }
+
+.rocket-img:hover {
+    animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(0deg);
+    }
+}
+
+.main-section {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.navbar {
+  object-fit: cover;
+}
+.container {
+  z-index: 999;
+  position: fixed;
+  display: flex;
+  justify-content: flex-start;
+  height: 300px;
+  width: 100px;
+  margin-top: 20vh;
+  flex-direction: column;
+  background: none;
+  border-bottom-right-radius: 40px;
+  border-top-right-radius: 40px;
+}
+.btn {
+  background: none;
+  border: 2px solid grey;
+  font-family: 'montserrat';
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 9px 23px;
+  text-decoration: none;
+  height: 100px;
+  width: 100px;
+}
+.box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+.btn:active {
+  position: relative;
+  top: 1px;
+}
+.extra1 {
+  border-top-right-radius: 40px;
+}
+
+.extra2 {
+  border-bottom-right-radius: 40px;
+}
+.container a{
+    text-decoration:none;
+    color: inherit;
+}
+.black-hole {
+    width: 100%;
+    height: 70vh;
+}
+
+.black-hole-info {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info {
+    color: white;
+    font-family: "montserrat";
+}
+.info >h1 {
+    font-size: 50px;
+    color: white;
+    font-family: "montserrat";
+}
+
+.typewriter p {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+  .meet-blackhole {
+      background-color: rgb(75, 71, 71);
+      height: 150vh;
+      width: 100%;
+  }
+
+
+  .meet-head {
+      font-family: "montserrat";
+      color: white;
+      font-size: 40px;
+      text-align: center;
+    }
+
+.hole {
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+
+}
+
+.section {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 30vh;
+    width: 80%;
+    margin-top: 30px;
+}
+
+.info-b {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: "montserrat";
+    justify-content: center;
+    background-color: rgb(100, 94, 94);
+    height: 25vh;
+    border-radius: 20px;
+    width: 60%;
+}
+
+.info-b > h1 , .info-b > p {
+    margin: 10px;
+}
+
+/*.hole-c {
+    position:absolute;
+    transition-duration:1s;
+    animation:animate 3s;
+}
+
+.hole-c {
+    margin-right: 1000px;
+}
+
+.hole-alt {
+
+}
+
+  @keyframes animate{
+      from{
+          transform:rotate(0deg);
+        } 
+        to{
+    transform:rotate(-500deg);
+    }
+    from{
+    right:5px;
+    } 
+    to{
+    right:80%;
+    }
+  }
+
+  .hole-alt {
+    position:absolute;
+    transition-duration:1s;
+    animation:animate-2 3s;
+  }
+
+  @keyframes animate-2{
+    from{
+        transform:rotate(0deg);
+      } 
+      to{
+  transform:rotate(-500deg);
+  }
+  from{
+  left:5px;
+  } 
+  to{
+  left:80%;
+  }
+}*/
+
+.about-page {
+    background-color: #ffffff;
+    height: 100vh;
+    width: 100%;
+}
+
+
+.compo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height:80vh;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+/* h1 {
+  font-size: 30px;
+  color:black;
+  font-family: 'montserrat';
+  text-align: center;
+  margin-top: 7vh;
+} */
+
+.proImage {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  position: relative;
+}
+.proName {
+  margin-top: 0;
+  color: black;
+  font-family: "montserrat";
+}
+.info-b > p {
+  color: white;
+  font-size: 15px;
+  font-family: 'montserrat';
+}
+.fa {
+  padding: 20px;
+  font-size: 40px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  color: black;
+}
+
+.fa-instagram {
+  color: black;
+}
+
+.fa-github {
+  color: black;
+}
+
+.fa-linkedin {
+  color: black;
+}
+@media only screen and (max-width: 600px) {
+  .fa{
+    padding: 5px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+ 
+}
+
+.comma {
+    height: 30px;
+    width: 30px;
+}
+
+.name-span {
+    margin-top: 20px;
+}
+
+@media url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #eddedd;
+}
+.footer {
+  width: 100vw;
+  height: 350px;
+  position: relative;
+  background-color: black;
+  border-radius: 3px;
+  
+}
+.footer-content {
+  height: 300px;
+  display: flex;
+  padding: 40px 60px;
+  width: 100%;
+  border-bottom: 1px solid #84849d;
+}
+.footer-section {
+  width: 23%;
+}
+.footer-content .form {
+  width: 33%;
+}
+.footer-content .form p {
+  font-size: 14px;
+}
+.footer-section input {
+  border: 1px solid #84849d;
+  padding: 10px 25px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.footer-section button {
+  padding: 12px 78px;
+  color: white;
+  font-size: 15px;
+  background-color: #5d7cc5;
+  border: none;
+  border-radius: 5px;
+}
+.footer-section li {
+  list-style: none;
+  padding-bottom: 7px;
+}
+.footer-section li a {
+  text-decoration: none;
+  color: white;
+}
+.footer-section h3 {
+  color: white;
+}
+
+.footer-bottom {
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  text-align: center;
+  color: #84849d;
+}
+
+.usage
+{
+    margin-top:50px;
+}
+.usage-video
+{
+    display:block;
+    margin:auto;
+    padding-bottom: 30px;
+    width:1000px;
+    height:400px;
+}
+
+.video-blackhole {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color:black;
+  height: 80vh;
+  font-family: "montserrat";
+  font-size: 40px;
+  /* background-color: rgb(75, 71, 71);; */
+  justify-content: space-around;
+  background-image: url("assests/images/dotted.svg");
+}
+
+#preload {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#preload img {
+  width: 50px;
+  height: 50px;
 }
